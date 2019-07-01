@@ -11,7 +11,7 @@ depends: [
   "dune" {build & >= "1.2.0"}
   "ocaml" {>= "4.07.0"}
   "dns" {= version}
-  "dns-mirage" {= version}
+  "dns-mirage" {>= "4.0"}
   "dns-server" {= version}
   "dns-resolver" {= version}
   "mirage-time-lwt"
