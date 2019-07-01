@@ -1,0 +1,34 @@
+opam-version: "2.0"
+maintainer: "team AT robur dot io"
+authors: ["Hannes Mehnert <hannes@mehnert.org>"]
+homepage: "https://github.com/mirage/ocaml-dns"
+doc: "https://mirage.github.io/ocaml-dns/"
+dev-repo: "git+https://github.com/mirage/ocaml-dns.git"
+bug-reports: "https://github.com/mirage/ocaml-dns/issues"
+license: "BSD2"
+
+depends: [
+  "dune" {build & >= "1.2.0"}
+  "ocaml" {>= "4.07.0"}
+  "dns" {= version}
+  "domain-name" {>= "0.2.1"}
+  "randomconv"
+  "duration"
+  "alcotest" {with-test}
+  "nocrypto" {with-test}
+]
+
+build: [
+  ["dune" "subst"] {pinned}
+  ["dune" "build" "-p" name "-j" jobs]
+  ["dune" "runtest" "-p" name "-j" jobs] {with-test}
+]
+
+synopsis: "DNS server, primary and secondary"
+description: """
+Primary and secondary DNS server implemented in value-passing style. Needs an
+effectful layer to be useful.
+"""
+url {
+  src: "git+https://github.com/hannesm/ocaml-dns.git#future"
+}
