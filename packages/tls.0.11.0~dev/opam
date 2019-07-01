@@ -38,5 +38,5 @@ securing web services ([HTTPS](http://tools.ietf.org/html/rfc2818)), emails,
 virtual private networks, and wireless networks.
 """
 url {
-  src: "git+https://github.com/hannesm/ocaml-tls.git#future"
+  src: "git+https://github.com/hannesm/ocaml-tls.git#awa-future"
 }

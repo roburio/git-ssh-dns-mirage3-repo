@@ -31,5 +31,5 @@ description: """
 tls-mirage implements an effectful layer (Mirage_flow_lwt.S) in MirageOS using lwt.
 """
 url {
-  src: "git+https://github.com/hannesm/ocaml-tls.git#future"
+  src: "git+https://github.com/hannesm/ocaml-tls.git#awa-future"
 }
