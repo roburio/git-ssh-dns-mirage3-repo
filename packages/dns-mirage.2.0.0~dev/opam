@@ -38,3 +38,6 @@ supported (always the full length of the hash algorithm is used).
 Please read [the blog article](https://hannes.nqsb.io/Posts/DNS) for a more
 detailed overview.
 """
+url {
+  src: "git+https://github.com/hannesm/ocaml-dns.git#future"
+}
