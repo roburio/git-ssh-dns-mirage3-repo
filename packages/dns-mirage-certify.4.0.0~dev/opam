@@ -11,15 +11,14 @@ depends: [
   "dune" {build & >= "1.2.0"}
   "ocaml" {>= "4.07.0"}
   "dns" {= version}
-  "dns-mirage" {>= "4.0"}
-  "dns-server" {= version}
-  "dns-resolver" {= version}
-  "mirage-time-lwt"
-  "mirage-clock-lwt"
+  "dns-mirage" {= version}
+  "dns-certify" {= version}
   "mirage-random"
+  "mirage-time-lwt"
+  "mirage-clock-lwt" {>= "2.0.0"}
   "lwt"
-  "randomconv"
   "duration"
+  "tls"
   "mirage-stack-lwt"
 ]
 
@@ -29,9 +28,10 @@ build: [
   ["dune" "runtest" "-p" name "-j" jobs] {with-test}
 ]
 
-synopsis: "DNS caching resolver for MirageOS"
+synopsis: "MirageOS let's encrypt certificate retrieval"
 description: """
-A caching DNS resolver for MirageOS.
+A function to retrieve a certificate when providing a hostname, TSIG key, server
+IP, and an optional key seed. Best used with an letsencrypt unikernel.
 """
 url {
   src: "git+https://github.com/hannesm/ocaml-dns.git#future"
