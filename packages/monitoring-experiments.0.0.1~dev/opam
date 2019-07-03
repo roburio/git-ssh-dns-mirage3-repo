@@ -1,0 +1,38 @@
+opam-version: "2.0"
+maintainer: "Hannes Mehnert <hannes@mehnert.org>"
+authors: ["Hannes Mehnert <hannes@mehnert.org>"]
+homepage: "https://github.com/hannesm/monitoring-experiments"
+doc: "https://hannesm.github.io/monitoring-experiments"
+dev-repo: "git+https://github.com/hannesm/monitoring-experiments.git"
+bug-reports: "https://github.com/mirage/monitoring-experiments/issues"
+license: "AGPL"
+
+depends: [
+  "ocaml" {>= "4.07.1"}
+  "logs" {>= "0.6.3"}
+  "metrics"
+  "astring" {>= "0.8.3"}
+  "tls" {>= "0.10.2"}
+  "tls-mirage"
+  "mirage-clock" {>= "2.0.0"}
+  "mirage-time-lwt" {>= "1.1.0"}
+  "mirage-stack-lwt" {>= "1.4.0"}
+  "mirage-flow-lwt" {>= "1.5.0"}
+  "tcpip"
+  "mirage-net-solo5"
+  "mirage-solo5"
+  "ocaml-freestanding" {>= "0.4.5"}
+  "bheap"
+]
+build: [
+  ["dune" "subst"] {pinned}
+  ["dune" "build" "-p" name "-j" jobs]
+  ["dune" "runtest" "-p" name "-j" jobs] {with-test}
+]
+synopsis: "Experiments with monitoring thingies"
+description: """
+bla bla
+"""
+url {
+  src: "git+https://github.com/hannesm/monitoring-experiments.git#future"
+}
