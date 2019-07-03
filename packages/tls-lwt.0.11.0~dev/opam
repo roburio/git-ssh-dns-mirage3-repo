@@ -1,0 +1,36 @@
+opam-version: "2.0"
+maintainer: [
+  "Hannes Mehnert <hannes@mehnert.org>" "David Kaloper <david@numm.org>"
+]
+authors: [
+  "David Kaloper <david@numm.org>" "Hannes Mehnert <hannes@mehnert.org>"
+]
+license: "BSD2"
+tags: "org:mirage"
+homepage: "https://github.com/mirleft/ocaml-tls"
+doc: "https://mirleft.github.io/ocaml-tls/doc"
+bug-reports: "https://github.com/mirleft/ocaml-tls/issues"
+depends: [
+  "ocaml" {>= "4.02.3"}
+  "dune" {build & >= "1.0"}
+  "tls"
+  "lwt" {>= "2.4.8"}
+  "ptime"
+  "cstruct" {>= "1.9.0"}
+  "nocrypto" {>= "0.5.4"}
+  "x509" {>= "0.5.0"}
+]
+build: [
+  ["dune" "subst"] {pinned}
+  ["dune" "build" "-p" name "-j" jobs]
+  ["dune" "runtest" "-p" name "-j" jobs] {with-test}
+]
+dev-repo: "git+https://github.com/mirleft/ocaml-tls.git"
+synopsis: "Effectful Lwt module for pure OCaml-TLS"
+description: """
+tls-lwt provides an effectful layer for tls using Lwt
+"""
+url {
+  src: "git+https://github.com/hannesm/ocaml-tls.git#awa-future"
+}
+
