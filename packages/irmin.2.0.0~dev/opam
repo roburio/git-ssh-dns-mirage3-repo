@@ -39,5 +39,5 @@ depend on external C stubs; it aims to run everywhere, from Linux,
 to browsers and Xen unikernels.
 """
 url {
-  src: "git+https://github.com/hannesm/irmin.git#nsnqsb"
+  src: "git+https://github.com/hannesm/irmin.git#future"
 }

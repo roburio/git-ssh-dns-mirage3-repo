@@ -17,14 +17,11 @@ depends: [
   "irmin"      {= version}
   "irmin-git"  {= version}
   "irmin-mem"  {= version}
-  "git-mirage" {>= "2.0.0"}
   "ptime"
-  "mirage-kv-lwt" {>= "2.0.0"}
   "mirage-clock"
-  "mirage-clock-lwt"
 ]
 
 synopsis: "MirageOS-compatible Irmin stores"
 url {
-  src: "git+https://github.com/hannesm/irmin.git#nsnqsb"
+  src: "git+https://github.com/hannesm/irmin.git#future"
 }

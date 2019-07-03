@@ -17,7 +17,7 @@ depends: [
   "ocaml"      {>= "4.01.0"}
   "dune"       {build  & >= "1.1.0"}
   "irmin"      {= version}
-  "git"        {>= "2.0.0"}
+  "git"        {>= "2.1"}
   "digestif"   {>= "0.6.1"}
   "irmin-test" {with-test}
   "irmin-mem"  {with-test}
@@ -31,5 +31,5 @@ description: """
 Irmin stores.
 """
 url {
-  src: "git+https://github.com/hannesm/irmin.git#nsnqsb"
+  src: "git+https://github.com/hannesm/irmin.git#future"
 }
