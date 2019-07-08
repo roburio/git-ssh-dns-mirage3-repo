@@ -20,7 +20,7 @@ build: [
 ]
 dev-repo: "git+https://github.com/inhabitedtype/ocaml-webmachine.git"
 url {
-  src: "git+https://github.com/roburio/ocaml-webmachine.git#caldav"
+  src: "git+https://github.com/roburio/ocaml-webmachine.git#webdav"
 }
 synopsis: "State-machine-based HTTP request processor"
 description: """
