@@ -6,7 +6,7 @@ Just a temporary(?) repository using MirageOS 3.x and:
 - irmin 2.0 (unreleased)
 - awa-ssh client (unreleased)
 - mirage-conduit using awa-ssh client and µDNS-client
-- x509, tls using domain-name (>= 0.2.1) and gmap
+- x509, tls using domain-name (>= 0.3.0) and gmap
 - letsencrypt (unreleased)
 - nocrypto (based on dune branch)
 

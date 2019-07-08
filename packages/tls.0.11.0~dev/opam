@@ -20,7 +20,7 @@ depends: [
   "x509" {>= "0.5.0"}
   "ounit" {with-test}
   "cstruct-unix" {with-test}
-  "domain-name" {>= "0.2.0"}
+  "domain-name" {>= "0.3.0"}
 ]
 build: [
   ["dune" "subst"] {pinned}

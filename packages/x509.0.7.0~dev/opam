@@ -24,7 +24,7 @@ depends: [
   "alcotest" {with-test}
   "cstruct-unix" {with-test & >= "3.0.0"}
   "gmap" {>= "0.3.0"}
-  "domain-name" {>= "0.2.1"}
+  "domain-name" {>= "0.3.0"}
   "ipaddr" {>= "3.0.0"}
 ]
 build: [
