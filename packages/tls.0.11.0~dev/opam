@@ -17,7 +17,7 @@ depends: [
   "cstruct" {>= "1.9.0"}
   "sexplib"
   "nocrypto" {>= "0.5.4"}
-  "x509" {= "0.7.0~dev"}
+  "x509" {>= "0.7.0"}
   "ounit" {with-test}
   "cstruct-unix" {with-test}
   "domain-name" {>= "0.3.0"}
