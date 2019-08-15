@@ -21,7 +21,7 @@ depends: [
   "cohttp-mirage"    {>= "1.0.0"}
   "mirage-flow-lwt"
   "mirage-channel-lwt"
-  "mirage-conduit"   {>= "3.0.0"}
+  "mirage-conduit"   {= "4.0.0~dev"}
   "git-http"         {= version}
   "git"              {= version}
   "alcotest"         {with-test & >= "0.8.1"}
