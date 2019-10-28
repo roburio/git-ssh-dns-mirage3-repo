@@ -16,7 +16,7 @@ depends: [
   "dune"       {build & >= "1.1.0"}
   "irmin-mirage" {= version}
   "irmin-git"  {= version}
-  "git-mirage" {= "2.1.0~dev"}
+  "git-mirage" {= "2.99.0~dev"}
   "mirage-kv-lwt" {>= "2.0.0"}
 ]
 
