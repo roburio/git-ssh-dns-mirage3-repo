@@ -17,24 +17,25 @@ build: [
 
 depends: [
   "ocaml"            {>= "4.03.0"}
-  "dune"             {build}
+  "dune"
   "cohttp-mirage"    {>= "1.0.0"}
   "mirage-flow-lwt"
   "mirage-channel-lwt"
-  "mirage-conduit"   {= "4.0.0~dev"}
+  "conduit-mirage"
   "git-http"         {= version}
   "git"              {= version}
   "alcotest"         {with-test & >= "0.8.1"}
   "mtime"            {with-test & >= "1.0.0"}
-  "mirage-fs-unix"   {with-test & >= "1.3.0"}
   "nocrypto"         {with-test & >= "0.5.4"}
   "tls"              {with-test}
   "io-page"          {with-test & >= "1.6.1"}
   "tcpip"            {with-test & >= "3.3.0"}
   "io-page-unix"     {with-test}
   "mirage-stack-lwt" {with-test & >= "1.3.0"}
+  "mirage-random-test" {with-test}
   "mirage-time-unix"
 ]
 url {
   src: "git+https://github.com/hannesm/ocaml-git.git#awa-future"
 }
+

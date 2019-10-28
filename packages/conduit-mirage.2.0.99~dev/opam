@@ -16,16 +16,15 @@ depends: [
   "mirage-flow-lwt" {>= "1.2.0"}
   "mirage-random" {>= "1.2.0"}
   "dns-client" {>= "4.0.0"}
-  "conduit-lwt" {= "1.6.0~dev"}
+  "conduit-lwt" {= version}
   "vchan" {>= "3.0.0"}
   "xenstore"
   "tls" {= "0.11.0~dev"}
-  "tls-mirage" {= "0.11.0~dev"}
   "ipaddr" {>= "3.0.0"}
   "ipaddr-sexp"
   "awa-mirage"
 
-  #these are required for tls.mirage, which mirage-conduit depends on
+  #these are required for tls.mirage, which conduit-mirage depends on
   "mirage-kv-lwt" {>= "2.0.0"}
   "mirage-clock" {>= "2.0.0"}
   "ptime"
