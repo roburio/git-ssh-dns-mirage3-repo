@@ -17,7 +17,7 @@ depends: [
   "ocaml"      {>= "4.01.0"}
   "dune"       {build  & >= "1.1.0"}
   "irmin"      {= version}
-  "git"        {= "2.1.0~dev"}
+  "git"        {= "2.99.0~dev"}
   "digestif"   {>= "0.6.1"}
   "irmin-test" {with-test}
   "irmin-mem"  {with-test}
