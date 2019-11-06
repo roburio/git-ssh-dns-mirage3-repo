@@ -13,8 +13,7 @@ tags: [
   "org:mirage"
 ]
 build: [
-  [ "ocaml" "pkg/pkg.ml" "build" "--pinned" "%{pinned}%" ] { os != "openbsd" }
-  [ "ocaml" "pkg/pkg.ml" "build" "--pinned" "false" ] { os = "openbsd" }
+  [ "ocaml" "pkg/pkg.ml" "build" "--dev-pkg" "%{dev}%" ]
 ]
 depends: [
   "ocamlfind" {build}
@@ -22,23 +21,19 @@ depends: [
   "topkg" {build & >= "0.9.0"}
   "bheap"
   "ocb-stubblr" {build}
-  "ocaml" {>= "4.04.2"}
+  "ocaml" {>= "4.06.0"}
   "cstruct" {>= "1.0.1"}
   "lwt" {>= "2.4.3"}
-  "lwt-dllist"
-  "ocaml-freestanding" {>= "0.4.1"}
+  "ocaml-freestanding" {>= "0.4.5"}
   "metrics"
-  "logs"
-  ("solo5-bindings-hvt" | "solo5-bindings-virtio" | "solo5-bindings-muen" | "solo5-bindings-genode")
+  "mirage-runtime" {>= "3.7.0"}
+  ("solo5-bindings-hvt" {>= "0.6.0" & < "0.7.0"} | "solo5-bindings-spt" {>= "0.6.0" & < "0.7.0"} | "solo5-bindings-virtio" {>= "0.6.0" & < "0.7.0"} | "solo5-bindings-muen" {>= "0.6.0" & < "0.7.0"} | "solo5-bindings-genode" {>= "0.6.0" & < "0.7.0"})
 ]
 conflicts: [
   "io-page" {< "2.0.0"}
   "solo5-kernel-ukvm"
   "solo5-kernel-virtio"
   "solo5-kernel-muen"
-]
-post-messages: [
-  "As of MirageOS 3.2.0 / Solo5 0.4.0, the 'ukvm' target has been renamed to 'hvt'. Please refer to https://github.com/mirage/mirage/blob/master/CHANGES.md for further details on this change."
 ]
 synopsis: "Solo5 core platform libraries for MirageOS"
 description: """
