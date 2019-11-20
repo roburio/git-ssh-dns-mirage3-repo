@@ -1,14 +1,12 @@
 # git ssh dns mirage3 repository
 
 Just a temporary(?) repository using MirageOS 3.x and:
-- µDNS (now ocaml-dns in unreleased version 2.0.0)
-- git 2.0 (unreleased)
-- irmin 2.0 (unreleased)
 - awa-ssh client (unreleased)
-- mirage-conduit using awa-ssh client and µDNS-client
-- x509, tls using domain-name (>= 0.3.0) and gmap
-- letsencrypt (unreleased)
+- mirage-conduit using awa-ssh client
+- git using awa-ssh
 - nocrypto (based on dune branch)
+- caldav (enhanced webmachine)
+- webmachine (enhanced with DAV nodes)
 
 still uses a mirage that uses ocamlbuild..
 
