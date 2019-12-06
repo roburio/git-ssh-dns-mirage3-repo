@@ -30,6 +30,7 @@ depends: [
   "metrics"
   "metrics-lwt"
   "metrics-influx"
+  "solo5-bindings-hvt"
 ]
 build: [
   ["dune" "subst"] {pinned}
