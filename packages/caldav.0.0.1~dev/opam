@@ -54,5 +54,5 @@ A CalDAV server. Supports everything from the roburio/icalendar library.
 Also supports a bit of WebDAV.
 """
 url {
-  src: "git+https://github.com/roburio/caldav.git#future"
+  src: "git+https://github.com/roburio/caldav.git"
 }
