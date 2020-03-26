@@ -24,8 +24,8 @@ build: [
 ]
 
 depends: [
-  "ocaml"      {>= "4.03.0"}
-  "dune"
+  "ocaml"      {>= "4.07.0"}
+  "dune"       {>= "1.1"}
   "uri"        {>= "1.9.0"}
   "lwt"        {>= "2.4.7"}
   "angstrom"   {>= "0.9.0"}
@@ -46,10 +46,10 @@ depends: [
   "astring"
   "cstruct"
   "ocamlgraph"
-  "alcotest" {with-test & >= "0.8.1"}
-  "nocrypto" {with-test & >= "0.5.4"}
-  "tls"      {with-test}
-  "mtime"    {with-test & >= "1.0.0"}
+  "alcotest"          {with-test & >= "0.8.1"}
+  "mirage-crypto-rng" {with-test & >= "0.5.4"}
+  "tls"               {with-test}
+  "mtime"             {with-test & >= "1.0.0"}
 ]
 url {
   src: "git+https://github.com/hannesm/ocaml-git.git#awa-future"

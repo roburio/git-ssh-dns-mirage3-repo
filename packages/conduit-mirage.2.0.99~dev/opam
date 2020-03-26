@@ -6,9 +6,9 @@ tags: "org:mirage"
 homepage: "https://github.com/mirage/ocaml-conduit"
 bug-reports: "https://github.com/mirage/ocaml-conduit/issues"
 depends: [
-  "ocaml" {>= "4.03.0"}
+  "ocaml" {>= "4.07.0"}
   "dune"
-  "ppx_sexp_conv" {>="v0.9.0"}
+  "ppx_sexp_conv" {>="v0.12.0"}
   "sexplib"
   "cstruct" {>= "3.0.0"}
   "mirage-stack" {>= "2.0.0"}
@@ -17,18 +17,14 @@ depends: [
   "mirage-flow-combinators" {>= "2.0.0"}
   "mirage-random" {>= "2.0.0"}
   "dns-client" {>= "4.1.0"}
-  "conduit-lwt" {= version}
+  "conduit-lwt"
   "vchan" {>= "5.0.0"}
   "xenstore"
-  "tls" {>= "0.11.0~dev"}
+  "tls" {>= "0.11.0"}
+  "tls-mirage" {>= "0.11.0"}
   "ipaddr" {>= "3.0.0"}
   "ipaddr-sexp"
   "awa-mirage"
-
-  #these are required for tls.mirage, which conduit-mirage depends on
-  "mirage-kv" {>= "3.0.0"}
-  "mirage-clock" {>= "3.0.0"}
-  "ptime"
 ]
 conflicts: [
   "mirage-conduit"

@@ -10,8 +10,8 @@ doc: "https://mirage.github.io/ocaml-conduit/"
 bug-reports: "https://github.com/mirage/ocaml-conduit/issues"
 depends: [
   "ocaml" {>= "4.03.0"}
-  "dune" {build}
-  "ppx_sexp_conv"
+  "dune"
+  "ppx_sexp_conv" {>="v0.12.0"}
   "sexplib"
   "astring"
   "uri"
@@ -44,7 +44,7 @@ The useful opam packages available that extend this library are:
 - `conduit-lwt`: the portable Lwt implementation
 - `conduit-lwt-unix`: the Lwt/Unix implementation
 - `conduit-async` the Jane Street Async implementation
-- `mirage-conduit`: the MirageOS compatible implementation
+- `conduit-mirage`: the MirageOS compatible implementation
 """
 url {
   src: "git+https://github.com/hannesm/ocaml-conduit.git#awa-future"
