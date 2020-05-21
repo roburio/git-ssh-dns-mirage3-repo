@@ -32,7 +32,7 @@ depends: [
   "mirage-clock" {>= "2.0.0"}
   "mirage-random" {>= "2.0.0"}
   "ppx_deriving" {>= "4.3"}
-  "webmachine"
+  "webmachine" {= "0.6.3~webdav"}
   "lwt" {>= "4.0"}
   "ptime" {>= "0.8.5"}
   "cohttp" {>= "2.0.0"}
