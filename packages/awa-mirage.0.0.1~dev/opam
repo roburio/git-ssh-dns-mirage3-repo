@@ -27,5 +27,5 @@ depends: [
 synopsis: "SSH implementation in OCaml"
 description: """The OpenSSH protocol implemented in OCaml."""
 url {
-  src: "git+https://github.com/hannesm/awa-ssh.git"
+  src: "git+https://github.com/hannesm/awa-ssh.git#future"
 }
