@@ -1,0 +1,59 @@
+opam-version: "2.0"
+synopsis:     "Library implementing the OpenVPN protocol and configuration format"
+homepage:     "https://github.com/roburio/openvpn"
+dev-repo:     "git+https://github.com/roburio/openvpn.git"
+bug-reports:  "https://github.com/roburio/openvpn/issues"
+doc:          "https://github.com/roburio/openvpn/doc"
+author:       ["robur"]
+maintainer:   ["robur"]
+license:      "AGPL"
+
+build: [
+  ["dune" "subst" ] {pinned}
+  ["dune" "build"   "-p" name "-j" jobs]
+  ["dune" "runtest" "-p" name "-j" jobs] {with-test}
+]
+
+depends: [
+  "dune"
+  "ocaml" {>= "4.08.0"}
+  "odoc" {with-doc}
+
+  "fmt"      { >= "0.8.6" }
+  "logs"     { >= "0.6.2" }
+  "rresult"  { >= "0.6.0" }
+
+  "angstrom" { >= "0.14.0" }
+  "cstruct"  { >= "4.0.0" }
+  "cmdliner"
+  "domain-name" { >= "0.2.0" }
+  "fmt"
+  "gmap"     { >= "0.3.0" }
+  "hex"      { >= "1.4.0" }
+  "ipaddr"   { >= "5.0.0" }
+  "logs"
+  "cstruct-lwt"
+  "lwt"
+  "mirage-crypto"
+  "mirage-crypto-rng" {>= "0.8.0"}
+  "ptime"
+  "rresult"
+  "tls" {>= "0.11.0"}
+  "dns-client" {>= "4.5.0"}
+  "x509" {>= "0.10.0"}
+  "duration"
+
+  "tuntap" {>= "1.8.1"}
+  # mirage:
+  "mirage-stack" {>= "2.0.0"}
+  "mirage-protocols" {>= "4.0.0"}
+  "tcpip" {>= "4.1.0"}
+  "mirage-random" {>= "2.0.0"}
+  "mirage-clock" {>= "3.0.0"}
+
+  "crowbar" {with-test}
+  "alcotest" {with-test}
+]
+url {
+  src: "git+https://github.com/roburio/openvpn.git"
+}
