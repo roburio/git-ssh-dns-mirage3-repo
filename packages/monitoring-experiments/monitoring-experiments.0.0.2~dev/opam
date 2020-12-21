@@ -19,7 +19,7 @@ depends: [
   "mirage-stack" {>= "2.2.0"}
   "tcpip" {>= "6.0.99"}
   "mirage-net-solo5" {>= "0.6.2"}
-  "mirage-solo5" {>= "0.6.3"}
+  "mirage-solo5" {>= "0.6.4"}
   "ocaml-freestanding" {>= "0.4.5"}
   "bheap"
 ]
